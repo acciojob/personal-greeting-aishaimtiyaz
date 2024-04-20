@@ -9,6 +9,7 @@ const App = () => {
 
   const handleNameChange = (event) => {
     setName(event.target.value);
+    setGreeting(`Hello, ${event.target.value}!`);
   };
 
   const handleBlur = () => {
