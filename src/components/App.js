@@ -13,7 +13,8 @@ const App = () => {
   };
 
   const handleBlur = () => {
-    setGreeting(`Hello, ${name}!`);
+    setGreeting("");
+    setName("");
   };
   return (
 <div>
