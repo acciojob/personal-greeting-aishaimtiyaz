@@ -18,7 +18,7 @@ const App = () => {
   };
   return (
 <div>
-      <p>Enter your name:</p>
+      <div>Enter your name:</div>
       <input
           type="text"
           value={name}
