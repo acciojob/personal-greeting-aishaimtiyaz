@@ -18,14 +18,14 @@ const App = () => {
   };
   return (
 <div>
-      <div>Enter your name:</div>
+      <p>Enter your name:</p>
       <input
           type="text"
           value={name}
           onChange={handleNameChange}
           onBlur={handleBlur}
         />
-      <div>{greeting}</div>
+      <p>{greeting}</p>
     </div>
   );
 };
