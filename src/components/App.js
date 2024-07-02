@@ -5,11 +5,11 @@ import './../styles/App.css';
 const App = () => {
 
  const [name, setName] = useState('');
-  const [greeting, setGreeting] = useState('');
+ const [greeting, setGreeting] = useState('');
 
   const handleNameChange = (event) => {
     setName(event.target.value);
-    setGreeting(`Hello, ${event.target.value}!`);
+    setGreeting(`Hello ${event.target.value}!`);
   };
 
   const handleBlur = () => {
@@ -18,15 +18,13 @@ const App = () => {
   };
   return (
 <div>
-      <label>
-        Enter your name:
-        <input
+      <p>Enter your name:</p>
+      <input
           type="text"
           value={name}
           onChange={handleNameChange}
           onBlur={handleBlur}
         />
-      </label>
       <div>{greeting}</div>
     </div>
   );
