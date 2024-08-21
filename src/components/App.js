@@ -5,11 +5,9 @@ import './../styles/App.css';
 const App = () => {
 
  const [name, setName] = useState('');
- const [greeting, setGreeting] = useState('');
 
   const handleNameChange = (event) => {
     setName(event.target.value);
-    setGreeting(`Hello ${event.target.value}!`);
   };
 
   const handleBlur = () => {
@@ -25,7 +23,7 @@ const App = () => {
           onChange={handleNameChange}
           onBlur={handleBlur}
         />
-      <p>{greeting}</p>
+      <p> Hello {name}!</p>
     </div>
   );
 };
