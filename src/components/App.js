@@ -21,7 +21,7 @@ const App = () => {
           onChange={handleNameChange}
           onBlur={handleBlur}
         />
-       {greet!=""? <p>Hello {greet}!</p> : ""}
+       {greet!=""? <p>Hello {greet}!</p> :<p></p>}
     </div>
   );
 };
