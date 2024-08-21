@@ -15,7 +15,6 @@ const App = () => {
   };
   return (
 <div>
-      <p>Enter your name:</p>
       <input
           type="text"
           value={greet}
