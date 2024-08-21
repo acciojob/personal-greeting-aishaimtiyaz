@@ -11,7 +11,6 @@ const App = () => {
   };
 
   const handleBlur = () => {
-    setGreeting("");
     setName("");
   };
   return (
