@@ -4,25 +4,25 @@ import './../styles/App.css';
 
 const App = () => {
 
- const [name, setName] = useState('');
+ const [greet, setGreet] = useState('');
 
   const handleNameChange = (event) => {
-    setName(event.target.value);
+    setGreet(event.target.value);
   };
 
   const handleBlur = () => {
-    setName("");
+    setGreet("");
   };
   return (
 <div>
       <p>Enter your name:</p>
       <input
           type="text"
-          value={name}
+          value={greet}
           onChange={handleNameChange}
           onBlur={handleBlur}
         />
-       <p>Hello {name}!</p>
+       {greet!=""? <p>Hello {greet}!</p> : ""}
     </div>
   );
 };
