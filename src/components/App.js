@@ -23,7 +23,7 @@ const App = () => {
           onChange={handleNameChange}
           onBlur={handleBlur}
         />
-      <p> Hello {name}!</p>
+       <p>Hello {name}!</p>
     </div>
   );
 };
